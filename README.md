@@ -19,9 +19,9 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/el_crimp](https://hexdocs.pm/el_crimp).
 
-# Crimpua
+# El-Crimp
 
-[![Build Status](https://travis-ci.org/BBC-News/crimpua.svg?branch=master)](https://travis-ci.org/BBC-News/crimpua)
+[![Build Status](https://travis-ci.org/)](https://travis-ci.org/)
 
 ElCrimp is an implementation of [Crimp](https://github.com/BBC-News/crimp) in Elixir.
 
