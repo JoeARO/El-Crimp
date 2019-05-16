@@ -1,29 +1,29 @@
-# ElCrimp
+# Crimpex
 
 **TODO: Add description**
 
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `el_crimp` to your list of dependencies in `mix.exs`:
+by adding `Crimpex` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:el_crimp, "~> 0.1.0"}
+    {:Crimpex, "~> 0.1.0"}
   ]
 end
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/el_crimp](https://hexdocs.pm/el_crimp).
+be found at [https://hexdocs.pm/Crimpex](https://hexdocs.pm/Crimpex).
 
 # El-Crimp
 
 [![Build Status](https://travis-ci.org/)](https://travis-ci.org/)
 
-ElCrimp is an implementation of [Crimp](https://github.com/BBC-News/crimp) in Elixir.
+Crimpex is an implementation of [Crimp](https://github.com/BBC-News/crimp) in Elixir.
 
 Please see the [bbc-news/crimp](https://github.com/BBC-News/crimp) repo for more details.
 
@@ -35,12 +35,12 @@ Please see the [bbc-news/crimp](https://github.com/BBC-News/crimp) repo for more
 ## Usage
 
 ```lua
-ElCrimp.signature({a = {b = 1}}) -- prints "ac13c15d07e5fa3992fc6b15113db900"
+Crimpex.signature({a = {b = 1}}) -- prints "ac13c15d07e5fa3992fc6b15113db900"
 ```
 
 ## Implementation Details
 
-Under the hood ElCrimp annotates the passed data structure to a nested array of primitives (strings, numbers, booleans, nils, etc.) and a single byte to indicate the type of the primitive:
+Under the hood Crimpex annotates the passed data structure to a nested array of primitives (strings, numbers, booleans, nils, etc.) and a single byte to indicate the type of the primitive:
 
 |  Type   | Byte |
 |   :-:   |  :-: |
@@ -58,7 +58,7 @@ Notation.notate({a=1})
 "1NaSAH"
 ```
 
-Before signing ElCrimp, uses the `#notation` function to transform the return value of a map to a string.
+Before signing Crimpex, uses the `#notation` function to transform the return value of a map to a string.
 
 ```elixir
 Notation.notate({ a: { b: 'c' } })

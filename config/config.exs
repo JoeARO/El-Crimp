@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure your application as:
 #
-#     config :el_crimp, key: :value
+#     config :Crimpex, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:el_crimp, :key)
+#     Application.get_env(:Crimpex, :key)
 #
 # You can also configure a third-party app:
 #

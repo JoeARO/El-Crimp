@@ -24,7 +24,6 @@ defmodule Notation do
   defp sort_list(list) do
     list
     |> Enum.sort(&string_compare/2)
-    |> IO.inspect()
     |> Enum.map(&notate/1)
     |> to_string
   end
@@ -68,8 +67,16 @@ defmodule Notation do
     case Util.typeof(obj) do
       "list" -> Enum.sort(obj, &string_compare/2)
       "map"  -> Enum.sort(tuple(obj), &string_compare/2)
-      ""
       _      -> obj
+    end
+  end
+
+  def firstItemOf(collection) do
+    first_item = List.first(collection)
+    if Util.typeof(first_item) === "list" do
+      firstItemOf(first_item)
+    else
+      first_item
     end
   end
 end

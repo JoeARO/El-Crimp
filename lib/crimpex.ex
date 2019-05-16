@@ -1,6 +1,6 @@
-defmodule ElCrimp do
+defmodule Crimpex do
   @moduledoc """
-  Documentation for ElCrimp.
+  Documentation for Crimpex.
   """
 
   @doc """
