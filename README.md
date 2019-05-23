@@ -1,3 +1,5 @@
+Ownership has been transferred and further changes will happen there, please see: https://github.com/bbc/crimpex to keep updated.
+
 # Crimpex
 
 **TODO: Add description**
